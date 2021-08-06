@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+export AWS_DEFAULT_REGION="eu-west-3"
+export RAILS_ENV=${RAILS_ENV:=production}
+
+docker-compose run \
+  {% include "_cctmp/dash_name.txt" %} \
+  ./bin/_deploy
