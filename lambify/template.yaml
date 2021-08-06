@@ -6,9 +6,9 @@ Parameters:
 
   RailsEnv:
     Type: String
-    Default: staging
+    Default: qa
     AllowedValues:
-      - staging
+      - qa
       - production
 
 Globals:

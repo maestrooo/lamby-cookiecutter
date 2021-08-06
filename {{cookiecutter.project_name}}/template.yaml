@@ -6,7 +6,7 @@ Parameters:
 
   RailsEnv:
     Type: String
-    Default: staging
+    Default: qa
     AllowedValues:
       - development
       - qa

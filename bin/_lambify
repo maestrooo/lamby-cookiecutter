@@ -24,10 +24,10 @@ cp -r ./lambify/bin/* "${PROJECT_FOLDER}/bin"
 #
 cp ./lambify/config/initializers/secret_key_base.rb "${PROJECT_FOLDER}/config/initializers"
 
-# Create a simple staging env file derived from prod so
+# Create a simple qa env file derived from prod so
 # you can deploy your stack for QA.
 #
-cp ./lambify/config/environments/staging.rb "${PROJECT_FOLDER}/config/environments"
+cp ./lambify/config/environments/qa.rb "${PROJECT_FOLDER}/config/environments"
 
 # Add a getting started .env.development Dotenv file to be shared. Remember,
 # your per-develooper over rides will go in .env.development.local. Also
