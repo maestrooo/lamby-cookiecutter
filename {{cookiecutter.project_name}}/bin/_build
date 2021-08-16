@@ -16,10 +16,10 @@ bundle config --local path './vendor/bundle'
 bundle install --quiet --jobs 4
 
 echo "== Environments & Configuration =="
-# ./bin/rails \
-#   -rlamby \
-#   lamby:ssm:dotenv \
-#   LAMBY_SSM_PARAMS_PATH="/{% include "_cctmp/file_name.txt" %}/${RAILS_ENV}/env"
+ ./bin/rails \
+   -rlamby \
+   lamby:ssm:dotenv \
+   LAMBY_SSM_PARAMS_PATH="/{% include "_cctmp/file_name.txt" %}/${RAILS_ENV}/env"
 
 echo "== Asset Hosts & Precompiling =="
 NODE_ENV='production' ./bin/rails assets:precompile
